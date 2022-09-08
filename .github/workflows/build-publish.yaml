@@ -25,7 +25,7 @@ jobs:
       uses: docker/metadata-action@v4
       with:
         images: |
-            w9jds/firebase-action
+            flowclub/firebase-action
             ghcr.io/${{ github.repository }}
 
     -
@@ -33,7 +33,7 @@ jobs:
       if: github.event_name != 'pull_request'
       uses: docker/login-action@v2
       with:
-        username: w9jds
+        username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     -
@@ -43,7 +43,7 @@ jobs:
       with:
         registry: ghcr.io
         username: ${{ github.actor }}
-        password: ${{ secrets.PACKAGES_TOKEN }}
+        password: ${{ secrets.GITHUB_TOKEN }}
 
     -
       name: Build and push

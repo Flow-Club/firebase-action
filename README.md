@@ -1,5 +1,5 @@
 # GitHub Actions for Firebase
-
+__This is a fork of [https://github.com/w9jds/firebase-action](https://github.com/w9jds/firebase-action) that uses node 14 instead of 16__
 This Action for [firebase-tools](https://github.com/firebase/firebase-tools) enables arbitrary actions with the `firebase` command-line client.
 
 ## Inputs
@@ -68,7 +68,7 @@ jobs:
           name: dist
           path: dist
       - name: Deploy to Firebase
-        uses: w9jds/firebase-action@master
+        uses: flowclub/firebase-action@master
         with:
           args: deploy --only hosting
         env:
@@ -98,7 +98,7 @@ Starting with version v2.1.2 each version release will point to a versioned dock
 
 ```yaml
   name: Deploy to Firebase
-  uses: docker://w9jds/firebase-action:master
+  uses: docker://flowclub/firebase-action:master
   with:
     args: deploy --only hosting
   env:
