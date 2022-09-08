@@ -1,5 +1,6 @@
 # GitHub Actions for Firebase
-__This is a fork of [https://github.com/w9jds/firebase-action](https://github.com/w9jds/firebase-action) that uses node 14 instead of 16__
+_This is a fork of [https://github.com/w9jds/firebase-action](https://github.com/w9jds/firebase-action) that uses node 14 instead of 16_
+
 This Action for [firebase-tools](https://github.com/firebase/firebase-tools) enables arbitrary actions with the `firebase` command-line client.
 
 ## Inputs
