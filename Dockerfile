@@ -14,7 +14,7 @@ LABEL com.github.actions.color="gray-dark"
 RUN apt update && apt-get install -y jq openjdk-11-jre
 
 RUN npm i -g npm@8.10.0
-RUN npm i -g firebase-tools@11.24.0
+RUN npm i -g firebase-tools@11.30.0
 
 COPY LICENSE README.md /
 COPY "entrypoint.sh" "/entrypoint.sh"
